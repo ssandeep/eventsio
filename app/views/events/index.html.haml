@@ -1,0 +1,8 @@
+%h1 Events
+%table
+  %tbody
+    - @events.each do |row|
+      %tr
+        - row.attributes.keys.each do |column|
+          %td= row.attributes[column]
+
